@@ -8,6 +8,10 @@ app.get('/',(req,res)=>{
     res.send("Hello World..");
 })
 
+app.get('/alert',(req,res)=>{
+    res.send("<script>alert('Hello World..');</script>");
+})
+
 app.get('/api',(req,res)=>{
     res.send(JSON.stringify({name:"Aaditya",age:21}));
 })
